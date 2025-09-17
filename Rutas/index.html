@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas de Transporte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .bg-corp-blue {
+      background-color: #19467c;
+    }
+    .bg-corp-blue-light {
+      background-color: #2e5b9e;
+    }
+    .bg-corp-blue-lighter {
+      background-color: #e6edf7;
+    }
+    .text-corp-blue {
+      color: #19467c;
+    }
+    .border-corp-blue {
+      border-color: #19467c;
+    }
+    .btn-route {
+      transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    }
+    .btn-route:hover {
+      transform: translateY(-2px);
+      background-color: #436ba8;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-corp-blue text-white py-4 shadow-lg">
+    <div class="container mx-auto px-2">
+      <div class="flex justify-center">
+        <img src="stabilus.png" alt="Logotipo de Stabilus en azul, ubicado en la parte superior del sitio web de rutas de transporte, transmite una atmósfera profesional y corporativa" class="h-6 md:h-14 w-auto">
+      </div>
+      <p class="text-center text-blue-100 mt-2 text-xs md:text-sm">Descarga los horarios y detalles de las rutas disponibles</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-2 py-4 flex-grow">
+    <section class="bg-white rounded-xl shadow-2xl p-3 md:p-8 max-w-full md:max-w-2xl mx-auto border border-corp-blue">
+      <h2 class="text-xl md:text-2xl font-semibold text-corp-blue mb-3 md:mb-4 text-center">Archivos de Rutas</h2>
+      <p class="text-corp-blue mb-4 md:mb-6 text-xs md:text-sm leading-relaxed text-center">Selecciona una ruta para descargar el PDF con los detalles del transporte a la planta.</p>
+      <ul class="space-y-4 md:space-y-6">
+        <li>
+          <a href="TERESITAS.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            TERESITAS PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>Otilio y La Herradura</li>
+              <li>Otilio y Charro</li>
+              <li>Otilio y San Javier</li>
+              <li>Otilio y Libertad</li>
+              <li>Libertad y C. Venustiano Carranza</li>
+              <li>Venustiano Carranza y Pardon</li>
+              <li>La Lomitá y Nueva Tecnologia</li>
+              <li>San Esteban y Miguel Falcon</li>
+              <li>Miguel Falcon y Juan Navarro</li>
+              <li>Juan Navarro y Rio Colorado</li>
+              <li>Juan Navarro y Rio Panuco</li>
+              <li>Juan Navarro y Paso del Agua</li>
+              <li>Calle 17 y Calle 34</li>
+              <li>Calle 17 y Calle 20</li>
+              <li>Calle 17 y Fundadores</li>
+              <li>Eulalio Gutierrez y C.Amapolas</li>
+              <li>Planta</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="CAÑADA.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            CAÑADA PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>Calle 5 y Arabia Saudita</li>
+              <li>Fco I Madero</li>
+              <li>Francisco I. Madero</li>
+              <li>Antonio Narro y Enrique Mtz y Mtz</li>
+              <li>Enrique Mtz y Cid Gzz</li>
+              <li>Cid Gzz y Oscar Valdez</li>
+              <li>W.Gonzales y Colina de Los Robles</li>
+              <li>W.Gonzales y Luis Echeverria</li>
+              <li>Libertad y Julio Cervantes</li>
+              <li>Liberyad y Pedro Aranda</li>
+              <li>Pedro Aranda y Antonio Cardenas</li>
+              <li>Antonio Cardenas y Diamante</li>
+              <li>Antonio Cardenas y Francisco de Quevedo</li>
+              <li>Francisco Quevedo y Urdinola</li>
+              <li>Urdinola y J.Mery</li>
+              <li>Urdinola y Otilio</li>
+              <li>Otilio y La Fragua</li>
+              <li>La Fragua y Reforma</li>
+              <li>Planta</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="OTILIO.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            OTILIO PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>Otilio y La Herradura</li>
+              <li>Otilio y Charro</li>
+              <li>Otilio y San Javier</li>
+              <li>Otilio y Libertad</li>
+              <li>Libertad y C. Venustiano Carranza</li>
+              <li>Venustiano Carranza y Pardon</li>
+              <li>La Lomitá y Nueva Tecnologia</li>
+              <li>San Esteban y Miguel Falcon</li>
+              <li>Miguel Falcon y Juan Navarro</li>
+              <li>Juan Navarro y Rio Colorado</li>
+              <li>Juan Navarro y Rio Panuco</li>
+              <li>Juan Navarro y Paso del Agua</li>
+              <li>Calle 17 y Calle 34</li>
+              <li>Calle 17 y Calle 20</li>
+              <li>Calle 17 y Fundadores</li>
+              <li>Eulalio Gutierrez y C.Amapolas</li>
+              <li>Valdez Sanchez y Polinesia</li>
+              <li>Polinesia y Nazario Ortiz</li>
+              <li>Planta</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="ARROYOS.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            ARROYOS PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>Blvd Santa Monica y Santa Maria</li>
+              <li>Arroyo de la Quebrada y de Los Arroyos</li>
+              <li>De Los Arroyos y Calz Salt de Agua</li>
+              <li>Rio Mississippi y Rio Sena</li>
+              <li>Antiguo Camino y Monterrey</li>
+              <li>Arroyo Nuevo y Independencia</li>
+              <li>Francisco Sarabia y Luis Gutierrez</li>
+              <li>Blvd del Valle y Blvd Jaime</li>
+              <li>Benavides</li>
+              <li>Las Torres y Congreso del Trabajo</li>
+              <li>Congreso del Trabajo y 1 de Mayo</li>
+              <li>Congreso del Trabajo y M. Dieguez</li>
+              <li>Fidel Velazquez</li>
+              <li>Planta</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="ANALCO.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            ANALCO PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>VALLE PTE Y VALLE ORIENTE</li>
+              <li>VALLE NORTE Y TEHUILACAN</li>
+              <li>VALLE ORIENTE Y VILLASOL</li>
+              <li>BLVD GUSTAVO DIAZ ORDAZ Y VILLA BLANCO</li>
+              <li>FEDERALISMO Y ANALCO</li>
+              <li>ANALCO Y TEHUILACAN</li>
+              <li>TULUM Y MARIANO MORALES</li>
+              <li>MARIANO MORALES Y BLVD GUSTAVO DIAZ ORDAZ</li>
+              <li>GUSTAVO DIAZ ORDAZ Y JOSE MARIA MORELOS</li>
+              <li>JOSE MARIA MORELOS Y AV. INDUSTRIAL</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="MIRASIERRA.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            MIRASIERRA PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>FUNDADORES Y MORELOS</li>
+              <li>MORELOS Y CALLE 20</li>
+              <li>OTILIO Y SOLIDARIDAD</li>
+              <li>SOLIDARIDAD Y C. ACACIA</li>
+              <li>SOLIDARIDAD Y FUNDADORES</li>
+              <li>CALLE 17 Y CALLE 2</li>
+              <li>CALLE 19 Y REVOLUCION</li>
+              <li>CALLE 19 Y CIPRES</li>
+              <li>MIRASIERRA Y REVOLUCION</li>
+              <li>CEDROS Y PROL CIPRES</li>
+              <li>CEDROS Y EMPALME</li>
+              <li>MEZQUITE Y C. TOMILLO</li>
+              <li>MEZQUITE Y FUNDADORES</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="MIGUELHIDALGO.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            MIGUEL HIDALGO PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>SIERRA DE LAS CASTAS Y SIERRA DE RUBI</li>
+              <li>M. HIDALGO Y LUIS ECHEVERRIA</li>
+              <li>ECHEVERRIA</li>
+              <li>MIGUEL HIDALGO Y BENITO JUAREZ</li>
+              <li>IGNACIO ALLENDE</li>
+              <li>IGNACIO ALLENDE Y CALLE 13</li>
+              <li>CAM.ESENICO Y CALLE 11</li>
+              <li>CALLE 11 VICENTE GUERRERO</li>
+              <li>VICENTE GUERRERO Y BENITO JUAREZ</li>
+              <li>VICENTE GUERRERO Y LUIS ECHEVERRIA</li>
+              <li>LA HERRADURA Y ONCEAVA</li>
+              <li>ONCEAVA Y SINCHO</li>
+              <li>LUIS ECHEVERRIA</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="SALTILLO2000.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            SALTILLO 2000 PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>MUSEO DEL DESIERTO Y RETAMA </li>
+              <li>JAVIER GARCIA Y C.PISTACHE</li>
+              <li>MUSEO DEL DESIERTO Y ZARAGOZA</li>
+              <li>CATEDRAL DE SANTIAGO Y JAVIER GARCIA</li>
+              <li>JAVIER GARCIA</li>
+              <li>JUPITER Y HERCULES</li>
+              <li>JUPITER Y MEMBRILLOS</li>
+              <li>T.DE LAS VIOLETAS Y MAGNOLIAS</li>
+              <li>GEMINIS Y ZEUS</li>
+              <li>ANDALUCIA BLVD ESPANA</li>
+              <li>VALENCIA Y LA ROJIA</li>
+              <li>ZEUS Y MITOLOGIA</li>
+              <li>MITOLOGIA Y LAS TORRES</li>
+              <li>LUIS ECHEVERRIA Y 20 DE NOV</li>
+              <li>VITO ALESSIO Y REBONATO</li>
+              <li>VITO ALESSIO E INDIANA</li>
+              <li>VITO ALESSIO Y NAZARIO ORTIZ</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="BELLAVISTA.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            BELLAVISTA PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>CARLOS SALAZAR Y C. QUINTA</li>
+              <li>LUIS ECHEVERRÍA Y FLORES SAUCEDO</li>
+              <li>FLORES SAUCEDO Y ANTONIO NARRO</li>
+              <li>ANTONIO NARRO Y LUIS ECHEVERRÍA</li>
+              <li>ANTONIO NARRO Y JULIO CERVANTES</li>
+              <li>JULIO CERVANTES Y MARÍA MORELOS</li>
+              <li>MARÍA MORELOS Y PEDRO ARANDA</li>
+              <li>MIGUEL HIDALGO Y FELIX U. GÓMEZ</li>
+              <li>MIGUEL HIDALGO Y ANTONIO DE LA FUENTE</li>
+              <li>MIGUEL HIDALGO Y PÉREZ TREVIÑO</li>
+              <li>MIGUEL HIDALGO Y PRESIDENTE CÁRDENAS</li>
+              <li>MIGUEL HIDALGO Y FRANCISCO COSS</li>
+              <li>VENUSTIANO CARRANZA Y LUIS ECHEVERRÍA</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="MINITA.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            LA MINITA PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>VIOLETAS Y LOS LIRIOS</li>
+              <li>FELIPE BERROZÁBAL</li>
+              <li>BERROZÁBAL Y MANUEL NEGRETE</li>
+              <li>BUSTAMANTE Y C. SEGUNDA</li>
+              <li>OCÉANO ATLÁNTICO Y PRINCIPAL</li>
+              <li>PRINCIPAL Y SEXTA RUIZ</li>
+              <li>CALLETANO RAMOS Y LAS TORRES</li>
+              <li>CUQUITA Y CATANZARO</li>
+              <li>PABLO SIDAR Y PABLO RUIZ</li>
+              <li>PABLO RUIZ Y CARLOS SANTANA</li>
+              <li>CARLOS SANTANA Y JOSÉ ESPINOZA</li>
+              <li>JOSÉ ESPINOZA Y TENOCHTITLAN</li>
+              <li>ISIDRO LÓPEZ Y SAGRADO CORAZÓN</li>
+              <li>ISIDRO LÓPEZ Y CAMPANARES</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="PARAJEDELVALLE.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            PARAJE DEL VALLE PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>OSCAR FLORES TAPIA Y PROL. MATAMOROS</li>
+              <li>OSCAR FLORES TAPIA Y HACIENDA FLORES</li>
+              <li>CARR. LOS PINOS Y PINO ALBAR</li>
+              <li>PINO MACEDONIA Y PINO MARÍTIMO</li>
+              <li>BLVD. EL ESCORIAL Y LOMA CENTRAL</li>
+              <li>BLVD. GUSTAVO DÍAZ ORDAZ</li>
+              <li>BLVD. GUSTAVO DÍAZ ORDAZ Y FRANCISCO COSS</li>
+              <li>ANACAHUITA Y MANUEL DE LA FUENTE</li>
+              <li>FRANCISCO COSS Y PLAN DE GUADALUPE</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="CERRITOS.pdf" class="btn-route block w-full bg-corp-blue-lighter text-corp-blue py-5 px-4 rounded-2xl hover:shadow-lg transition duration-300 text-center font-bold text-xl md:text-2xl">
+            CERRITOS PW
+          </a>
+          <div class="mt-2 bg-corp-blue-lighter rounded-lg px-2 py-2 text-corp-blue text-xs md:text-sm">
+            <span class="font-semibold">Paradas:</span>
+            <ul class="list-disc list-inside mt-1 space-y-1">
+              <li>MISION STA LUCIA</li>
+              <li>CALLE SEGUNDA Y SAN ANDRES</li>
+              <li>CALLE SEGUNDA Y STA LUCIA</li>
+              <li>MISION STA LUCIA Y CALLE 7</li>
+              <li>CANDELILA Y MEZQUITE</li>
+              <li>CENTENARIO DE TORREON Y VALIDEZ SANCHEZ</li>
+              <li>FERMIN PONCE Y ENRIQUE PONCE</li>
+              <li>CENTENARIO DE TORREON Y ACUEDUCTO</li>
+              <li>ACUEDUCTO Y STA GERTRUDS</li>
+              <li>STA GERTRUDIS Y VALDEZ SANCHEZ</li>
+              <li>BLVD. OMEGA Y BLVD DE LAS NACIONES</li>
+              <li>PLANTA</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-corp-blue text-white py-3 text-center text-xs md:text-sm">
+  </footer>
+
+  <script>
+    // Simula la carga de PDFs (los enlaces deben apuntar a los archivos reales en el servidor)
+    document.querySelectorAll('a[href$=".pdf"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        console.log(`Descargando: ${e.target.href}`);
+      });
+    });
+  </script>
+</body>
+</html>
